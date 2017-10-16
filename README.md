@@ -13,7 +13,7 @@
 
 # 使用手机扫码查看效果
 
-<img src="https://mahoneming.github.io/redPacketRain/QRCode.png" width = "50%" height = "50%" alt="QR Code" />
+<img src="https://mahoneming.github.io/redPacketRain/QRCode.png" width = "260px" height = "260px" alt="QR Code" />
 
 # 主要方法
 
