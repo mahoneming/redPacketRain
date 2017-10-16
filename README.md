@@ -2,18 +2,18 @@
 
  ## 这是一款H5抢红包小游戏
  #### 没有依赖任何第三方库，纯原生JS编写
- #### [点击链接查看效果,使用chrome 手机模式](http://owl4tkj9p.bkt.clouddn.com/demo/demo.html).
+ #### [点击链接查看效果,使用chrome 手机模式](https://mahoneming.github.io/redPacketRain/index.html).
 
 # Import using script tag
 
 ```HTML
-<script type="text/javascript" src="./js/rain.min.js"></script>
-<script type="text/javascript" src="./js/rainPage.min.js"></script>
+<script type="text/javascript" src="./js/rain.js"></script>
+<script type="text/javascript" src="./js/rainPage.js"></script>
 ```
 
 # 使用手机扫码查看效果
 
-<img src="http://owl4tkj9p.bkt.clouddn.com/QRCode.png" width = "50%" height = "50%" alt="QR Code" />
+<img src="https://mahoneming.github.io/redPacketRain/QRCode.png" width = "50%" height = "50%" alt="QR Code" />
 
 # 主要方法
 
