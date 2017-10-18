@@ -24,14 +24,24 @@ body {
 #clock {
     display: none;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);
-    font-size: 100px;
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    line-height: 100px;
+    top: 40%;
+    left: 45%;
+    /* transform: translate3d(-50%, -50%, 0); */
+     font-size: 100px; 
+    /* width: 100px; */
+    /* height: 100px; */
+    /* text-align: center; */
+    /* line-height: 100px; */
+    animation: clock 1s infinite linear;
+}
+
+@keyframes clock {
+    0% {
+        transform: scale(10);
+    }
+    100% {
+        transform: scale(0);
+    }
 }
 
 
@@ -150,9 +160,8 @@ body {
     display: block;
     width: 54px;
     height: 77px;
-    background: url('../img/catImg.png') no-repeat 0 0;
+    background: url('../img/red.png') no-repeat 0 0;
     background-size: cover;
-    opacity: 1;
     animation: spin 1s infinite linear;
 }
 
@@ -164,7 +173,6 @@ body {
         transform: rotate(360deg);
     }
 }
-
 
 /*点击后的红包*/
 
@@ -178,8 +186,12 @@ body {
 
 .redPackNone {
     /* display: none; */
-    transition: opacity 2s ease-out;
-    opacity: 0;
+    position: absolute;
+    display: block;
+    width: 54px;
+    height: 32px;
+    background: url('../img/none.png') no-repeat 0 0;
+    background-size: cover;
 }
 
 
@@ -279,6 +291,7 @@ body {
 
 .list-item {
     overflow: hidden;
+    /* animation-delay: 1s; */
 }
 
 .list-item-name {

@@ -9,7 +9,7 @@
     var clockCount = 3,
         clockTimer = setInterval(clockCountDecrease, 1000);
     // 抢红包时间设置
-    var count = 15,
+    var count = 20,
         timer
     // 倒计时321函数
     function clockCountDecrease() {
@@ -60,12 +60,12 @@
                     count: e.target.getAttribute('redAmount')
                 })
             }
-
         }
     });
     // 抢完打开弹窗
     function showPop() {
         g('mask').style.display = 'block';
+        g('pop').className = 'animated fadeIn'
         g('pop').style.display = 'block';
         var list = [];
         redList.forEach(function (item) {
@@ -97,12 +97,17 @@
             count.innerText = `x${list[i].count}`;
 
             var contain = document.createElement("div");
-            contain.className = "list-item";
+            contain.className = "list-item animated fadeInUp";
+            contain.style.animationDelay = i+"s";
             contain.appendChild(name);
             contain.appendChild(count);
 
             document.querySelector('.list').appendChild(contain);
         }
+        if (!list.length) {
+            document.querySelector('.list').innerHTML = '<div style="text-align: center;">暂未抢到红包!</div>'
+        }
+        // document.querySelectorAll('.list-item').style.opacity = 1;
         // 添加到dom上
         // g('allAmount').innerText = (allAmount).toFixed(2);
     }

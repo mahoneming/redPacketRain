@@ -40,7 +40,7 @@ redPack.prototype.create = function (id, amount) {
         if (e.target.className === 'redpack') {
             handler(e);
         } else if (e.target.getAttribute('redAmount') == 0) {
-            e.target.className = 'redPackNone';
+            e.target.className = 'redPackNone animated fadeOutDown';
         } else {
             return false;
         }
@@ -57,7 +57,6 @@ redPack.prototype.start = function (data) {
             i++;
         }
     }, that.density);
-
 };
 redPack.prototype.stop = function () {
     var This = this;
